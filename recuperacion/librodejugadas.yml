@@ -1,0 +1,196 @@
+name: ansible k8s
+hosts: localhost
+gather_facts: False
+connection: local
+
+  tasks:
+    - name: namespace
+      k8s:
+        state: present
+        definition:
+          apiVersion: v1
+          kind: Namespace
+          metadata:
+          name: asolano
+          labels:
+          tipo: dev
+
+
+
+    - name: pv
+      k8s:
+        state: present
+        definition:
+          apiVersion: v1 
+          kind: PersistentVolume
+          metadata:
+             name: pv
+             namespace: asolano
+             labels:
+               type: local
+          spec:
+            storageClassName: db
+            capacity:
+              storage: 10Gi
+            accessModes:
+              - ReadWriteOnce
+            hostPath:
+              path: "/mnt/data"   
+
+
+    - name: pvc
+      k8s:
+        state: present
+        definition:
+          apiVersion: v1
+          kind: pvc
+          metadata:
+            name: pv-c
+            namespace: asolano
+          spec:
+            storageClassName: db
+            accessModes:
+              - ReadWriteOnce
+            resources:
+              requests:
+                 storage: 3Gi
+
+
+    - name: deploment-mysql
+      k8s:
+        state: present
+        definition:
+          apiVersion: apps/v1
+          kind: Deployment
+          metadata:
+            name: deployment-mysql
+            namespace: asolano
+            labels:
+             estado: "1"
+          spec:
+            selector:
+              matchLabels:
+                app: mysql-app
+                tier: data
+            replicas: 1
+            template:
+              metadata:
+                labels:
+                  app: mysql-app
+                  tier: data
+              spec:
+                 containers:
+                 - name: database
+        image: aldosolanog/database:db
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: MYSQL_PASSWORD
+        - name: MYSQL_DATABASE
+          value: prueba
+        - name: MYSQL_USER
+          value: root
+        - name: MYSQL_PASSWORD
+          value: 
+
+        ports:
+        - containerPort: 3306
+        volumeMounts:
+        - name: mysql-persistent-storage
+          mountPath: /var/lib/mysql
+      volumes:
+        - name: mysql-persistent-storage
+          persistentVolumeClaim:
+            claimName: pv-c
+
+
+
+    - name: deployment-app
+      k8s:
+        state: present
+        definition:
+        apiVersion: apps/v1
+        kind: Deployment
+        metadata:
+          name: deployment-app
+          labels:
+            estado: "1"
+        spec:
+          selector:
+            matchLabels:
+              app: app
+              tier: web
+          replicas: 7
+          template:
+            metadata:
+              labels:
+                app: app
+                tier: web
+            spec:
+              containers:
+              - name: my-app
+                image: aldosolanog/app:v1
+                ports:
+                - containerPort: 80
+        
+      -  name: service-bd
+        k8s:
+          state: present
+          denition:
+            apiVersion: v1
+            kind: Service
+            metadata:
+              name: mysql-app
+              namespace: asolano
+              labels:
+                app: mysql-app
+            spec:
+              ports:
+              - protocol: "TCP"
+                port: 3306
+                targetPort: 3306
+              selector:
+                app: mysql-app
+                tier: mysql
+
+    - name: service-app
+      k8s:
+        state: present
+        definition:
+          apiVersion: apps/v1
+          kind: Service
+          metadata:
+            name: service-app
+            namespace: asolano
+            labels: 
+             estado: "1"
+          spec:
+            ports:
+            -  port: 80
+               targetPort: 80
+               protocol: TCP
+            selector:
+              matchLabels:
+                app: app
+
+    - name: ingress
+      k8s:
+        state: present
+        definition:
+          apiVersion: networking.k8s.io/v1
+          kind: Ingress
+          metadata:
+            name: ingress-app
+            annotations:
+              nginx.ingress.kubernetes.io/rewrite-target: /
+          spec:
+            rules:
+              - host: app.asolano.com
+                http:
+                  paths:
+                    - path: /
+                      pathType: Prefix
+                      backend:
+                        service:
+                          name: myapp-service
+                          port:
+                            number: 8

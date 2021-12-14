@@ -1,0 +1,431 @@
+<br><br>
+
+<form method="POST" action=""/>
+<table id="tabla">
+	<tr>
+		<td colspan="6"><p>
+		Ficha de identificacion
+	</p></td>
+	</tr>
+	<tr>
+		<td colspan="6"><p>
+	Fecha de elaboracion:
+	<input type="date" name="fecha_elab" size="40">
+	</td>
+	</tr>
+	<tr>
+	<td colspan="4"><p>
+	Nombre:
+	<input type="text" name="nombre" size="40"
+	placeholder="Escriba aqui su nombre completo">
+	</p></td>
+	<td><p>
+		Genero:
+	</p>
+	<select name="genero" id="lt">
+		<option value="Masculino">Masculino</option>
+		<option value="Femenino">Femenino</option>
+	</select>
+	</td>
+	<td><p>
+	Edad:
+	<input type="number" name="edad" size="20">
+	</p></td>
+	</tr>
+	<tr>
+		
+	<td colspan="2"><p>
+	Fecha de nacimiento:
+	<input type="date" name="fecha_nacimiento" size="40">
+	</td>
+	<td colspan="2"><p>
+	ocupacion:
+	<input type="text" name="ocupacion" size="40"
+	placeholder="Escriba aqui su ocupacion">
+	</p></td>
+	<td colspan="2">
+		<p>
+	lateralidad:
+</p>
+	<select name="lateralidad" id="lt">
+		<option value="Diestro">diestro</option>
+		<option value="zurdo">zurdo</option>
+	</select>
+
+	</td>
+	</tr>
+	<tr>
+		
+	<td colspan="3"><p>
+	Nacionalidad:
+	<input type="text" name="nacionalidad" size="40"
+	placeholder="Escriba aqui su nacionalidad">
+	</p></td>
+	<td colspan="2"><p>
+	Religion:
+	<input type="text" name="religion" size="40"
+	placeholder="Escriba aqui su religion">
+	</p></td>
+	<td colspan="2"><p>
+	Telefono:
+	<input type="number" name="telefono" size="20">
+	</p></td>
+	</tr>
+	<tr>
+		
+	<td colspan="3"><p>
+	Domicilio:
+	<input type="text" name="domicilio" size="40"
+	placeholder="Escriba aqui su domicilio">
+	</p></td>
+	<td colspan="3"><p>
+	Telefono de emergencia:
+	<input type="number" name="telefono_sos" size="20">
+	</p></td>
+	</tr>
+	<tr>
+		<td colspan="6"><p>
+	persona a quien contactar en caso de emergencia:
+	<input type="text" name="contacto" size="40"
+	placeholder="Escriba aqui su contacto de emergencia">
+	</p></td>
+	</tr>
+</table>
+<br><br>
+
+<br><br>
+<br><br><br>
+<div class="tabla_ant">
+	<table  border = "1px" id="tabla_antecedentes">
+	<tr>
+		<td colspan="6"><p>
+		Antecedentes heredo-familiares
+	</p></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td><p>
+	si
+	</p></td>
+	<td><p>
+	no
+	</p></td>
+	<td><p>
+	parentesco
+	</p></td>
+	<td><p>
+	V
+	</p></td>
+	<td><p>
+	M
+	</p></td>
+	</tr>
+	<tr>
+	<td>1- neoplacias</td>
+	
+	<td><p>
+		<input type="radio" name="r1" value="si" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r1" value="no" />
+	</p></td>
+	<td><p>
+		<input type="text" name="neoplacias" size="40"
+	placeholder="Escriba aqui">
+	</p></td>
+	<td><p>
+		<input type="radio" name="r2" value="v" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r2" value="m" />
+	</p></td>
+	</tr>
+	</tr>
+	<tr>
+	<td>2- tuberculosis</td>
+	<td><p>
+		<input type="radio" name="r3" value="si" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r3" value="no" />
+	</p></td>
+	<td><p>
+		<input type="text" name="tuberculosis" size="40"
+	placeholder="Escriba aqui">
+	</p></td>
+	<td><p>
+		<input type="radio" name="r4" value="v" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r4" value="m" />
+	</p></td>
+	</tr>
+	</tr>
+	<tr>
+	<td>3- Diabetes</td>
+	<td><p>
+		<input type="radio" name="r5" value="si" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r5" value="no" />
+	</p></td>
+	<td><p>
+		<input type="text" name="diabetes" size="40"
+	placeholder="Escriba aqui">
+	</p></td>
+	<td><p>
+		<input type="radio" name="r6" value="v" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r6" value="m" />
+	</p></td>
+	</tr>
+	</tr>
+	<tr>
+	<td>4- Artritis</td>
+	<td><p>
+		<input type="radio" name="r7" value="si" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r7" value="no" />
+	</p></td>
+	<td><p>
+		<input type="text" name="artritis" size="40"
+	placeholder="Escriba aqui">
+	</p></td>
+	<td><p>
+		<input type="radio" name="r8" value="v" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r8" value="m" />
+	</p></td>
+	</tr>
+	</tr>
+	<tr>
+	<td>5- Cardiopatias</td>
+	<td><p>
+		<input type="radio" name="r9" value="si" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r9" value="no" />
+	</p></td>
+	<td><p>
+		<input type="text" name="cardiopatias" size="40"
+		placeholder="Escriba aqui">
+	</p></td>
+	<td><p>
+		<input type="radio" name="r10" value="v" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r10" value="m" />
+	</p></td>
+	</tr>
+	</tr>
+	<tr>
+	<td>6- Enfermedades Neurobiologicas</td>
+	<td><p>
+		<input type="radio" name="r11" value="si" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r11" value="no" />
+	</p></td>
+	<td><p>
+		<input type="text" name="Neurobiologicas" size="40"
+	placeholder="Escriba aqui">
+	</p></td>
+	<td><p>
+		<input type="radio" name="r12" value="v" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r12" value="m" />
+	</p></td>
+	</tr>
+	</tr>
+	<tr>
+	<td>7- Trastornos Siquiatricos</td>
+	<td><p>
+		<input type="radio" name="r13" value="si" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r13" value="no" />
+	</p></td>
+	<td><p>
+		<input type="text" name="trastornos" size="40"
+	placeholder="Escriba aqui">
+	</p></td>
+	<td><p>
+		<input type="radio" name="r14" value="v" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r14" value="m" />
+	</p></td>
+	</tr>
+	</tr>
+	<tr>
+	<td>8- Enfermedades respiratorias</td>
+	<td><p>
+		<input type="radio" name="r15" value="si" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r15" value="no" />
+	</p></td>
+	<td><p>
+		<input type="text" name="respiratorias" size="40"
+	placeholder="Escriba aqui">
+	</p></td>
+	<td><p>
+		<input type="radio" name="r16" value="v" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r16" value="m" />
+	</p></td>
+	</tr>
+	</tr>
+	<tr>
+	<td>9- Hepatopatias</td>
+	<td><p>
+		<input type="radio" name="r17" value="si" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r17" value="no" />
+	</p></td>
+	<td><p>
+		<input type="text" name="hepatopatias" size="40"
+	placeholder="Escriba aqui">
+	</p></td>
+	<td><p>
+		<input type="radio" name="r18" value="v" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r18" value="m" />
+	</p></td>
+	</tr>
+	</tr>
+	<tr>
+	<td>10- Alergias</td>
+	<td><p>
+		<input type="radio" name="r19" value="si" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r19" value="no" />
+	</p></td>
+	<td><p>
+		<input type="text" name="alergias" size="40"
+	placeholder="Escriba aqui">
+	</p></td>
+	<td><p>
+		<input type="radio" name="r20" value="v" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r20" value="m" />
+	</p></td>
+	</tr>
+	</tr>
+	<tr>
+	<td>11- Hipertension</td>
+	<td><p>
+		<input type="radio" name="r21" value="si" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r21" value="no" />
+	</p></td>
+	<td><p>
+		<input type="text" name="hipertension" size="40"
+	placeholder="Escriba aqui">
+	</p></td>
+	<td><p>
+		<input type="radio" name="r22" value="v" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r22" value="m" />
+	</p></td>
+	</tr>
+	</tr>
+	<tr>
+	<td>12- Enfermedades hematologicas</td>
+	<td><p>
+		<input type="radio" name="r23" value="si" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r23" value="no" />
+	</p></td>
+	<td><p>
+		<input type="text" name="hematologicas" size="40"
+	placeholder="Escriba aqui">
+	</p></td>
+	<td><p>
+		<input type="radio" name="r24" value="v" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r24" value="m" />
+	</p></td>
+	</tr>
+	</tr>
+	<tr>
+	<td>13- Enfermedades hendocrinologicas</td>
+	<td><p>
+		<input type="radio" name="r25" value="si" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r25" value="no" />
+	</p></td>
+	<td><p>
+		<input type="text" name="hendocrinologicas" size="40"
+	placeholder="Escriba aqui">
+	</p></td>
+	<td><p>
+		<input type="radio" name="r26" value="v" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r26" value="m" />
+	</p></td>
+	</tr>
+	</tr>
+	<tr>
+	<td>14- Enfermedades Geneticas</td>
+	<td><p>
+		<input type="radio" name="r27" value="si" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r27" value="no" />
+	</p></td>
+	<td><p>
+		<input type="text" name="geneticas" size="40"
+	placeholder="Escriba aqui">
+	</p></td>
+	<td><p>
+		<input type="radio" name="r28" value="v" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r28" value="m" />
+	</p></td>
+	</tr>
+	</tr>
+	<tr>
+	<td>Otros</td>
+	<td><p>
+		<input type="radio" name="r29" value="si" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r29" value="no" />
+	</p></td>
+	<td><p>
+		<input type="text" name="otros" size="40"
+	placeholder="Escriba aqui">
+	</p></td>
+	<td><p>
+		<input type="radio" name="r30" value="v" />
+	</p></td>
+	<td><p>
+		<input type="radio" name="r30" value="m" />
+	</p></td>
+	</tr>
+	
+</table>
+</div>
+<br><br>
+<div class="buton_insert">
+	<input type="submit" name= "Aceptar" value="Aceptar"/>
+	<input type="reset" name= "reset" value="reset"/>
+	<input type="submit" name= "cancelar" value="cancelar"/>
+	</div>

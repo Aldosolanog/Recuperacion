@@ -1,0 +1,170 @@
+body {
+    background:url('https://w.wallhaven.cc/full/dp/wallhaven-dpo38l.jpg');
+    margin:0px;
+    font-family: 'Ubuntu', sans-serif;
+      background-size: 100% 110%;
+    
+  }
+  h1, h2, h3, h4, h5, h6, a {
+    margin:0; padding:0;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    
+  }
+  h1 { font-size: 500%
+ }
+
+
+  [type="submit"],
+  [type="reset"] {
+    height:30px;
+    width:100px;
+    background:#fff;
+    border:1px solid #f2f2f2;
+    border-radius:20px;
+    color: slategrey;
+    text-transform:uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    cursor:pointer;
+  }
+  [type="text"] {
+    max-width:650px;
+      width: 80%;
+    line-height:3em;
+    font-family: 'Ubuntu', sans-serif;
+    margin:1em 2em;
+    border-radius:5px;
+    border:2px solid #f2f2f2;
+    outline:none;
+    padding-left:10px;
+  }
+  #mensaje_txt {
+    max-width:650px;
+      width: 80%;
+    line-height:3em;
+    font-family: 'Ubuntu', sans-serif;
+    margin:1em 2em;
+    border-radius:5px;
+    border:2px solid #f2f2f2;
+    outline:none;
+    padding-left:10px;
+    text-align: center;
+  }
+  [type="date"] {
+    max-width:150px;
+      width: 80%;
+    line-height:3em;
+    font-family: 'Ubuntu', sans-serif;
+    margin:1em 2em;
+    border-radius:5px;
+    border:2px solid #f2f2f2;
+    outline:none;
+    padding-left:10px;
+  }
+
+  [type="number"] {
+    max-width:150px;
+      width: 80%;
+    line-height:3em;
+    font-family: 'Ubuntu', sans-serif;
+    margin:1em 2em;
+    border-radius:5px;
+    border:2px solid #f2f2f2;
+    outline:none;
+    padding-left:10px;
+  }
+
+  #lt {
+    max-width:150px;
+      width: 80%;
+    line-height:5em;
+    font-family: 'Ubuntu', sans-serif;
+    margin:1em 2em;
+    border-radius:5px;
+    border:2px solid #f2f2f2;
+    outline:none;
+    padding-left:10px;
+  }
+
+  #tabla{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    opacity: .8;
+    border:.5px solid #fff;
+    background:#F9EEFF;
+    border-radius:10px;
+    box-shadow:0px 0px 10px #000;
+    
+  }
+  #table_select{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    opacity: .8;
+    border:.5px solid #fff;
+    background:#F9EEFF;
+    border-radius:10px;
+    border: beige 5px solid;
+    box-shadow:0px 0px 10px #000;
+    
+  }
+  .tabla_ant{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    opacity: .8;
+    border:.5px solid #fff;
+    background:#F9EEFF;
+    border-radius:10px;
+    border: beige 5px solid;
+    box-shadow:0px 0px 10px #000;
+    
+  }
+  #tabla_antecedentes{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    margin:0; padding:0;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(11, 11, 58);
+    font-size: 150%;
+  }
+
+  p{
+    margin:0; padding:0;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(11, 11, 58);
+    font-size: 150%;
+  }
+  #p2{
+    margin:0; padding:0;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(10, 10, 22);
+    font-size: 150%;
+  }
+  .buton_insert{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .botones{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+  }
+  a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+    font-size: 200%
+  }
+
+  .mensaje{
+    position: relative;
+    text-align: center;
+    margin: 0 auto; 
+  }

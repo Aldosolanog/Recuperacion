@@ -1,0 +1,436 @@
+<table id="tabla">
+	<tr>
+		<td colspan="6"><p>
+		Ficha de identificacion
+	</p></td>
+	</tr>
+	<tr>
+    <td><p>
+	ID: (no editar)
+	<input type="text" name="ID" size="40" value="<?php echo $extraido['ID'];?>"
+	placeholder="Escriba aqui su nombre completo">
+	</td>
+		<td colspan="5"><p>
+	Fecha de elaboracion:
+	<input type="text" name="fecha_elab" size="40" value="<?php echo $extraido['fecha_elab'];?>"
+	placeholder="Escriba aqui su nombre completo">
+	</td>
+	</tr>
+	<tr>
+	<td colspan="4"><p>
+	Nombre:
+	<input type="text" name="nombre" size="40" value="<?php echo $extraido['nombre'];?>"
+	placeholder="Escriba aqui su nombre completo">
+	</p></td>
+	<td>
+	Genero:
+	<input type="text" name="genero" size="15" value="<?php echo $extraido['genero'];?>"
+	placeholder="Escriba aqui su nombre completo">
+	</td>
+	<td><p>
+	Edad:
+	<input type="number" name="edad" size="10" value="<?php echo $extraido['edad'];?>">
+	</p></td>
+	</tr>
+	<tr>
+		
+	<td colspan="2"><p>
+	Fecha de nacimiento:
+	<input type="text" name="fecha_nacimiento" size="20" value="<?php echo $extraido['fecha_de_nacimiento'];?>"
+	placeholder="Escriba aqui su nombre completo">
+	</td>
+	<td colspan="2"><p>
+	ocupacion:
+	<input type="text" name="ocupacion" size="20" value="<?php echo $extraido['ocupacion'];?>"
+	placeholder="Escriba aqui su ocupacion">
+	</p></td>
+	<td colspan="2">
+	lateralidad:
+	
+	<input type="text" name="lateralidad" size="40" value="<?php echo $extraido['lateralidad'];?>"
+	placeholder="Escriba aqui su nombre completo">
+
+	</td>
+	</tr>
+	<tr>
+		
+	<td colspan="3"><p>
+	Nacionalidad:
+	<input type="text" name="nacionalidad" size="40" value="<?php echo $extraido['nacionalidad'];?>"
+	placeholder="Escriba aqui su nacionalidad">
+	</p></td>
+	<td colspan="2"><p>
+	Religion:
+	<input type="text" name="religion" size="20" value="<?php echo $extraido['religion'];?>"
+	placeholder="Escriba aqui su religion">
+	</p></td>
+	<td colspan="2"><p>
+	Telefono:
+	<input type="number" name="telefono" size="20" value="<?php echo $extraido['telefono'];?>">
+	</p></td>
+	</tr>
+	<tr>
+		
+	<td colspan="3"><p>
+	Domicilio:
+	<input type="text" name="domicilio" size="40" value="<?php echo $extraido['domicilio'];?>"
+	placeholder="Escriba aqui su domicilio">
+	</p></td>
+	<td colspan="3"><p>
+	Telefono de emergencia:
+	<input type="number" name="telefono_sos" size="20" value="<?php echo $extraido['telefono_sos'];?>">
+	</p></td>
+	</tr>
+	<tr>
+		<td colspan="6"><p>
+	persona a quien contactar en caso de emergencia:
+	<input type="text" name="contacto" size="40" value="<?php echo $extraido['contacto'];?>"
+	placeholder="Escriba aqui su contacto de emergencia">
+	</p></td>
+	</tr>
+</table>
+<br><br><br>
+<div class="tabla_ant">
+	<table  border = "1px" id="tabla_antecedentes">
+		<tr>
+			<td colspan="6"><p>
+			Antecedentes heredo-familiares
+		</p></td>
+		</tr>
+		<tr>
+		<td></td>
+		<td><p>
+		si	/   no
+		</p></td>
+		<td><p>
+		parentesco
+		</p></td>
+		<td><p>
+		V	/	M
+		</p></td>
+		</tr>
+		<tr>
+		<td>1- neoplacias</td>
+		
+		<td><p>
+			<input type="text" name="r1" size="40" 
+			value="<?php echo  $extraido2['neo']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="neoplacias" size="40" 
+			value="<?php echo  $extraido2['neoplacias']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="r2" size="40" 
+			value="<?php echo  $extraido2['hmneo']; ?>"
+			placeholder="">
+		</p></td>
+		</tr>
+		</tr>
+		<tr>
+	
+		<td>2- tuberculosis</td>
+		
+		<td><p>
+			<input type="text" name="r3" size="40" 
+			value="<?php echo  $extraido2['tub']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="tuberculosis" size="40" 
+			value="<?php echo  $extraido2['tuberculosis']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="r4" size="40" 
+			value="<?php echo  $extraido2['hmtub']; ?>"
+			placeholder="">
+		</p></td>
+		</tr>
+		</tr>
+		<tr>
+		
+		<td>3- Diabetes</td>
+		
+		<td><p>
+			<input type="text" name="r5" size="40" 
+			value="<?php echo  $extraido2['dia']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="diabetes" size="40" 
+			value="<?php echo  $extraido2['diabetes']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="r6" size="40" 
+			value="<?php echo  $extraido2['hmdia']; ?>"
+			placeholder="">
+		</p></td>
+		</tr>
+		</tr>
+		<tr>
+		
+		<td>4- Artritis</td>
+		
+		<td><p>
+			<input type="text" name="r7" size="40" 
+			value="<?php echo  $extraido2['art']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="artritis" size="40" 
+			value="<?php echo  $extraido2['artritis']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="r8" size="40" 
+			value="<?php echo  $extraido2['hmart']; ?>"
+			placeholder="">
+		</p></td>
+		</tr>
+		</tr>
+		<tr>
+		
+		<td>5- Cardiopatias</td>
+		
+		<td><p>
+			<input type="text" name="r9" size="40" 
+			value="<?php echo  $extraido2['car']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="cardiopatias" size="40" 
+			value="<?php echo  $extraido2['cardiopatias']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="r10" size="40" 
+			value="<?php echo  $extraido2['hmcar']; ?>"
+			placeholder="">
+		</p></td>
+		</tr>
+		</tr>
+		<tr>
+		
+		<td>6- Enfermedades Neurobiologicas</td>
+		
+		<td><p>
+			<input type="text" name="r11" size="40" 
+			value="<?php echo  $extraido2['neu']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="Neurobiologicas" size="40" 
+			value="<?php echo  $extraido2['Neurobiologicas']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="r12" size="40" 
+			value="<?php echo  $extraido2['hmneu']; ?>"
+			placeholder="">
+			
+		</p></td>
+		</tr>
+		</tr>
+		<tr>
+		
+		<td>7- Trastornos Siquiatricos</td>
+		
+		<td><p>
+			<input type="text" name="r13" size="40" 
+			value="<?php echo  $extraido2['tra']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="trastornos" size="40" 
+			value="<?php echo  $extraido2['trastornos']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="r14" size="40" 
+			value="<?php echo  $extraido2['hmtra']; ?>"
+			placeholder="">
+		</p></td>
+		</tr>
+		</tr>
+		<tr>
+		
+		<td>8- Enfermedades respiratorias</td>
+		
+		<td><p>
+			<input type="text" name="r15" size="40" 
+			value="<?php echo  $extraido2['res']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="respiratorias" size="40" 
+			value="<?php echo  $extraido2['respiratorias']; ?>"
+			placeholder="">
+		
+		</p></td>
+		<td><p>
+			<input type="text" name="r16" size="40" 
+			value="<?php echo  $extraido2['hmres']; ?>"
+			placeholder="">
+		</p></td>
+		</tr>
+		</tr>
+		<tr>
+		
+		<td>9- Hepatopatias</td>
+		
+		<td><p>
+			<input type="text" name="r17" size="40" 
+			value="<?php echo  $extraido2['hep']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="hepatopatias" size="40" 
+			value="<?php echo  $extraido2['hepatopatias']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="r18" size="40" 
+			value="<?php echo  $extraido2['hmhep']; ?>"
+			placeholder="">
+		</p></td>
+		</tr>
+		</tr>
+		<tr>
+		
+		<td>10- Alergias</td>
+		
+		<td><p>			
+			<input type="text" name="r19" size="40" 
+			value="<?php echo  $extraido2['ale']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="alergias" size="40" 
+			value="<?php echo  $extraido2['alergias']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="r20" size="40" 
+			value="<?php echo  $extraido2['hmale']; ?>"
+			placeholder="">
+		</p></td>
+		</tr>
+		</tr>
+		<tr>
+		
+		<td>11- Hipertension</td>
+		
+		<td><p>
+			<input type="text" name="r21" size="40" 
+			value="<?php echo  $extraido2['hip']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="hipertension" size="40" 
+			value="<?php echo  $extraido2['hipertension']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="r22" size="40" 
+			value="<?php echo  $extraido2['hmhip']; ?>"
+			placeholder="">
+		</p></td>
+		</tr>
+		</tr>
+		<tr>
+		
+		<td>12- Enfermedades hematologicas</td>
+		
+		<td><p>
+			<input type="text" name="r23" size="40" 
+			value="<?php echo  $extraido2['hem']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="hematologicas" size="40" 
+			value="<?php echo  $extraido2['hematologicas']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="r24" size="40" 
+			value="<?php echo  $extraido2['hmhem']; ?>"
+			placeholder="">
+		</p></td>
+		</tr>
+		</tr>
+		<tr>
+		
+		<td>13- Enfermedades hendocrinologicas</td>
+		
+		<td><p>
+			<input type="text" name="r25" size="40" 
+			value="<?php echo  $extraido2['hen']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="hendocrinologicas" size="40" 
+			value="<?php echo  $extraido2['hendocrinologicas']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="r26" size="40" 
+			value="<?php echo  $extraido2['hmhen']; ?>"
+			placeholder="">
+		</p></td>
+		</tr>
+		</tr>
+		<tr>
+		
+		<td>14- Enfermedades Geneticas</td>
+		
+		<td><p>
+			<input type="text" name="r27" size="40" 
+			value="<?php echo  $extraido2['gen']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="geneticas" size="40" 
+			value="<?php echo  $extraido2['geneticas']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="r28" size="40" 
+			value="<?php echo  $extraido2['hmgen']; ?>"
+			placeholder="">
+		</p></td>
+		</tr>
+		</tr>
+		<tr>
+		
+		<td>Otros</td>
+		
+		<td><p>
+			<input type="text" name="r29" size="40" 
+			value="<?php echo  $extraido2['otr']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="otros" size="40" 
+			value="<?php echo  $extraido2['otros']; ?>"
+			placeholder="">
+		</p></td>
+		<td><p>
+			<input type="text" name="r30" size="40" 
+			value="<?php echo  $extraido2['hmotr']; ?>"
+			placeholder="">
+		</p></td>
+		</tr>
+		</tr>
+		<tr>
+		
+		
+	</table>
+	</div>
+<br><br><br>
+<input type="submit" name= "act" value="Insertar"/>
+ <input type="reset" name= "reset" value="reset"/>
+ <input type="submit" name= "cancelar" value="cancelar"/>
